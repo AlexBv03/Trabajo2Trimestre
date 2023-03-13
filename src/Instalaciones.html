@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/Icono.png">
+    <link href="../css/css.css"> 
+    <title>Instalaciones</title>
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right';
+        gap: 10px;
+        padding: 10px;
+        }
+        .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+        @media only screen and (max-width:800px) {
+         /* Tablets */
+        .main {
+            width: 80%;
+            padding: 0;
+            }         
+        .right {
+            width: 100%;
+            }   
+        }
+        @media only screen and (max-width:500px) {
+        /* Móviles */
+        .item1, .item2, .item3 {
+         width: 100%;
+            }
+        }   
+        .item1{
+            text-align: center;
+            font-size: 80px;
+            color: orange;
+        }
+        .item2{
+            font-size: 30px;
+            color: orange;
+        }
+        .item3{
+            font-size: 25px;
+            color: black;
+        }
+        .item4{
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+    <div class="item1">VECTOR FITNESS</div>
+    <div class="item2">
+        <a href="../Index.html">Inicio</a><br><br>
+        <a href="../src/Servicios.html">Servicios</a><br><br>
+        <a href="../src/Instalaciones.html">Instalaciones</a><br><br>
+        <a href="../src/Cuotas-Y-Horarios.html">Cuotas y Horarios<br><br></a>
+        <a href="./src/Encuentranos.html">Encuentranos</a></div>
+    <div class="item3">
+        <strong>INSTALACIONES</strong><br>
+        En Vector Fitness podrás disfrutar de las mejores instalaciones pensadas para ponértelo fácil. 
+        Local totalmente climatizado, bañado por luz natural, con vestuarios amplios dotados de gran número de duchas y taquillas.
+            <figure><img src="../img/maquinas-para-gimnasios.jpg" width="30%"><strong>Zona Fitness:</strong>
+                Sala de 630 m2 dedicados a aparatos, dividida en distintas zonas en función del nivel y de los objetivos de nuestros clientes.
+                Totalmente climatizada y acondicionada para que puedas hacer ejercicio en un ambiente agradable y con una temperatura constante.
+                Equipamiento de primer nivel: Hammer, Life Fitness, Nautilus, Eleiko, Precor...</a></figure>
+            <figure><img src="../img/gimnasio-funcional.jpg" width="30%"><strong>Zona de Entrenamiento Funcional:</strong>
+                80 m2 dedicados al Entrenamiento Funcional, con una estructura exclusiva donde poder realizar entrenamientos en suspensión, trabajo con cuerdas, multitud de tipos de flexiones en barra, trabajo con anillas...
+                Y para completar tu rendimiento atlético, material para entrenar potencia de salto, velocidad, y agilidad.</figure>
+            <figure><img src="../img/spinning.jpg" width="30%"><strong>Sala de Spinning</strong>
+                110 m2 de sala donde completar intensas clases de Spinning sin agobios de ningún tipo.
+                La sala está preparada con un sistema específico de ventilación y climatización que mantiene las condiciones ambientales.</figure>
+            <figure><img src="../img/vestuarios.jpg" width="30%"><strong>Vestuarios</strong>
+                Amplios vestuarios con un gran número de duchas para que no tengas que esperar nunca.
+                Limpieza y desinfección diaria para garantizar las máximas condiciones higiénicas.
+                Taquillas individuales con cierre de candado.</figure>
+    </div>
+    <div class="item4">
+        <a style="color: orange; font-size: 22px;">HORARIO DE APERTURA</a><br>
+        De Lunes a Viernes<br>
+        7:00 a 23:00<br>
+        Sábados<br>
+        10:00 a 14:00 y 17:00 a 21:00<br>
+        Domingos<br>
+        10:00 a 14:00<br>
+        <a style="color: orange; font-size: 22px;">DIRECCIÓN</a><br>
+        c/ Canalejas, 47<br>
+        06400 Don Benito (Badajoz)<br>
+        info@gimnasiovector.com<br>
+        Tel: 924 811 739<br>
+        646 601 772</div>
+    </div>  
+</body>
+</html>

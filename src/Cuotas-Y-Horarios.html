@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/Icono.png">
+    <link href="../css/css.css"> 
+    <title>Cuotas y Horarios</title>
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right';
+        gap: 10px;
+        padding: 10px;
+        }
+        .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+        @media only screen and (max-width:800px) {
+         /* Tablets */
+        .main {
+            width: 80%;
+            padding: 0;
+            }         
+        .right {
+            width: 100%;
+            }   
+        }
+        @media only screen and (max-width:500px) {
+        /* Móviles */
+        .item1, .item2, .item3 {
+         width: 100%;
+            }
+        }   
+        .item1{
+            text-align: center;
+            font-size: 80px;
+            color: orange;
+        }
+        .item2{
+            font-size: 30px;
+            color: orange;
+        }
+        .item3{
+            font-size: 25px;
+            color: black;
+        }
+        .item4{
+            font-size: 20px;
+            color: black;
+        }
+        .borde{
+            border-style: outset;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">VECTOR FITNESS</div>
+        <div class="item2">
+            <a href="../Index.html">Inicio</a><br><br>
+            <a href="../src/Servicios.html">Servicios</a><br><br>
+            <a href="../src/Instalaciones.html">Instalaciones</a><br><br>
+            <a href="../src/Cuotas-Y-Horarios.html">Cuotas y Horarios</a><br><br>
+            <a href="../src/Encuentranos.html">Encuentranos</a></div>
+        <div class="item3">
+            <div class="borde">
+            Cuotas<br><br>
+            <strong>Matrícula de inscripción (Vitalicia, sólo se paga una vez)</strong><br>
+            10,00€<br>
+            <strong>Mensualidad Sala Fitness</strong><br>
+            35,00€<br>
+            <strong>Mensualidad Sala Fitness + Spinning</strong><br>
+            38,00<br>
+            <strong>Cuota Familia (Dos miembros Sala Fitness)</strong><br>
+            65,00€<br>
+            <strong>Cuota Familia (Dos miembros Sala Fitness + Spinning)</strong><br>
+            65,00€<br>
+            <strong>Cuota Familia ampliada (a partir del tercer miembro*)</strong><br>
+            *Miembros de la familia menores de 20 años<br>
+            5,00€<br>
+            <strong>Cuota Joven (Menores de 20 años, Sala Fitness)</strong><br>
+            30,00€<br>
+            <trong>Cuota Joven (Menores de 20 años, Sala Fitness + Spinning)</strong><br>
+            30,00€<br>
+            <strong>Cuota Mayores (Mayores de 60 años, Sala Fitness + Spinning)</strong><br>
+            30,00€<br>
+            </div><br><br>
+            <div class="borde">
+                <strong>Horario de apertura de la instalación</strong><br>
+                De Lunes a Viernes<br>
+                7:00 a 23:00<br>
+                Sábados<br>
+                10:00 a 14:00<br>
+                17:00 a 21:00<br>
+                Domingos y Festivos<br>
+                10:00 a 14:00<br>
+            </div><br><br>
+            <div class="borde">                
+            <strong>Horario de clases de Spinning</strong><br>
+            Lunes a Jueves<br>
+            10:15<br>
+            18:30<br>
+            19:30<br>
+            21:00<br>
+            Viernes<br>
+            10:15<br>
+            19:00<br>
+            *Nota: La asistencia a las clases no tiene limitación horaria, 
+            excepto en aquellos meses del año en los que se produzca saturación de la instalación. 
+            En dichos meses la empresa se reserva el derecho de establecer un sistema de reservas a través de internet en el que
+            se garanticen al menos 12 sesiones mensuales.<br>
+            </div> 
+        </div> 
+        <div class="item4">
+            <a style="color: orange; font-size: 22px;">HORARIO DE APERTURA</a><br>
+            De Lunes a Viernes<br>
+            7:00 a 23:00<br>
+            Sábados<br>
+            10:00 a 14:00 y 17:00 a 21:00<br>
+            Domingos<br>
+            10:00 a 14:00<br>
+            <a style="color: orange; font-size: 22px;">DIRECCIÓN</a><br>
+            c/ Canalejas, 47<br>
+            06400 Don Benito (Badajoz)<br>
+            info@gimnasiovector.com<br>
+            Tel: 924 811 739<br>
+            646 601 772</div>
+    </div> 
+</body>
+</html>

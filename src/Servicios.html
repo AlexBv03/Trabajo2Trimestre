@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/Icono.png">
+    <link href="../css/css.css"> 
+    <title>Servicios</title>
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right';
+        gap: 10px;
+        padding: 10px;
+        }
+        .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+        @media only screen and (max-width:800px) {
+         /* Tablets */
+        .main {
+            width: 80%;
+            padding: 0;
+            }         
+        .right {
+            width: 100%;
+            }   
+        }
+        @media only screen and (max-width:500px) {
+        /* Móviles */
+        .item1, .item2, .item3 {
+         width: 100%;
+            }
+        }   
+        .item1{
+            text-align: center;
+            font-size: 80px;
+            color: orange;
+        }
+        .item2{
+            font-size: 30px;
+            color: orange;
+        }
+        .item3{
+            font-size: 25px;
+            color: black;
+        }
+        .item4{
+            font-size: 20px;
+            color: black;
+        }
+        .titulo{
+            font-size: 50px;
+            color: green;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">VECTOR FITNESS</div>
+        <div class="item2">
+            <a href="../Index.html">Inicio</a><br><br>
+            <a href="../src/Servicios.html">Servicios</a><br><br>
+            <a href="../src/Instalaciones.html">Instalaciones</a><br><br>
+            <a href="../src/Cuotas-Y-Horarios.html">Cuotas y Horarios</a><br><br>
+            <a href="./src/Encuentranos.html">Encuentranos</a></div>
+        <div class="item3">
+           <div>
+            <figure>
+                <a class="titulo">Mantenimiento</a>
+                <img src="../img/gym1.png">
+            </figure>
+            PUESTA EN FORMA Y PÉRDIDA DE GRASA<br>
+            Si es la primera vez que te apuntas a un gimnasio , o sólo buscas ponerte en forma y reducir grasas,
+            este es el plan de ejercicio que te recomendamos.<br>
+            Combina ejercicios aeróbicos (cinta de correr, elípticas, bicis...) 
+            con un circuito para mejorar el tono muscular de todo el cuerpo, mejorar tu postura, y endurecer el abdomen.
+           </div>
+           <div>
+            <figure>
+                <a class="titulo">Fuerza</a>
+                <img src="../img/gym2.png">
+            </figure>
+            Quieres ganar músculo y fuerza? Entonces has venido al sitio adecuado:
+            Amplia zona de peso libre, Rack de potencia, material de halterofilia, más de 3.000 kg en discos... y las mejores máquinas de musculación del mercado.<br>
+            En Vector Fitness somos centro oficial HAMMER STRENGHT.
+           </div>
+           <div>
+            <figure>
+                <a class="titulo">Agilidad</a>
+                <img src="../img/gym3.png">
+            </figure>
+            Corre más rápido, salta más alto, lanza más lejos... Dale un nuevo sentido al ejercicio con el Entrenamiento Funcional. Prepárate físicamente y transforma tus mejoras en rendimiento atlético.<br>
+            Tenemos reservada una zona especial para este tipo de entrenamiento donde hacer posible que te sientas como un auténtico deportista de élite.
+           </div>
+           <div>
+            <figure>
+                <a class="titulo">Resistencia</a>
+                <img src="../img/gym4.png">
+            </figure>
+            En Vector Fitness no podía faltar el Spinning: Intensas clases colectivas de ciclismo indoor supervisadas y dirigidas por un especialista con amplia experiencia en el ciclismo.<br>
+            Hemos dotado a la sala correspondiente con un sistema específico de ventilación y climatización para que realices las clases con comodidad.
+           </div>
+        </div> 
+        <div class="item4">
+            <a style="color: orange; font-size: 22px;">HORARIO DE APERTURA</a><br>
+            De Lunes a Viernes<br>
+            7:00 a 23:00<br>
+            Sábados<br>
+            10:00 a 14:00 y 17:00 a 21:00<br>
+            Domingos<br>
+            10:00 a 14:00<br>
+            <a style="color: orange; font-size: 22px;">DIRECCIÓN</a><br>
+            c/ Canalejas, 47<br>
+            06400 Don Benito (Badajoz)<br>
+            info@gimnasiovector.com<br>
+            Tel: 924 811 739<br>
+            646 601 772</div>
+    </div> 
+</body>
+</html>

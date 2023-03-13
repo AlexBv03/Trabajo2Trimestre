@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Mi trabajo de este trimestre es un intento de representación de la página web del Vector Fitness(gimnasio de Don Benito)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/Icono.png">
+    <link href="./css/css.css"> 
+    <title>Trabajo 2ºTrimestre</title>
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        .container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+        gap: 10px;
+        padding: 10px;
+        }
+        .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+        @media only screen and (max-width:800px) {
+         /* Tablets */
+        .main {
+            width: 80%;
+            padding: 0;
+            }         
+        .right {
+            width: 100%;
+            }   
+        }
+        @media only screen and (max-width:500px) {
+        /* Móviles */
+        .item1, .item2, .item3, .item4,.item5 {
+         width: 100%;
+            }
+        }   
+        .item1{
+            text-align: center;
+            font-size: 80px;
+            color: orange;
+        }
+        .item2{
+            font-size: 30px;
+            color: orange;
+        }
+        .item3{
+            font-size: 25px;
+            color: black;
+        }
+        .item4{
+            font-size: 20px;
+            color: black;
+        }
+        .item5{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #portada{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">VECTOR FITNESS</div>
+        <div class="item2">
+            <a href="./Index.html">Inicio</a><br><br>
+            <a href="./src/Servicios.html" target="_blank">Servicios</a><br><br>
+            <a href="./src/Instalaciones.html" target="_blank">Instalaciones</a><br><br>
+            <a href="./src/Cuotas-Y-Horarios.html" target="_blank">Cuotas y Horarios</a><br><br>
+            <a href="./src/Encuentranos.html" target="_blank">Encuentranos</a></div>
+        <div class="item3">
+            <figure>
+                <img id="portada" src="./img/portada.jpg" alt="portada gimnasio" width="1000px"> 
+            </figure>
+            Presentación<br><br>
+            Nuestras instalaciones están equipadas con material de primeras marcas, con el que podrás entrenar en las mejores condiciones posibles y maximizar tus resultados.
+            Vector Fitness es para todos<br><br>
+            No importa tu nivel inicial de condición física, en nuestras instalaciones encontrarás lo necesario para mejorar progresivamente ya seas un principiante o un experto.
+            Entrenamiento profesional a un paso de tu casa<br><br>
+            Podrás utilizar el mismo equipamiento con el que entrenan los deportistas profesionales. Cada elemento ha sido cuidadosamente seleccionado para que puedas ejercitarte de forma segura, eficaz, y cómoda. Y todo ello ubicado en una zona de fácil acceso y aparcamiento, con un horario que se adapta a tu ritmo de vida.
+        </div>  
+        <div class="item4">
+            <a style="color: orange; font-size: 22px;">HORARIO DE APERTURA</a><br>
+            De Lunes a Viernes<br>
+            7:00 a 23:00<br>
+            Sábados<br>
+            10:00 a 14:00 y 17:00 a 21:00<br>
+            Domingos<br>
+            10:00 a 14:00<br>
+            <a style="color: orange; font-size: 22px;">DIRECCIÓN</a><br>
+            c/ Canalejas, 47<br>
+            06400 Don Benito (Badajoz)<br>
+            info@gimnasiovector.com<br>
+            Tel: 924 811 739<br>
+            646 601 772</div>
+        <div class="item5">
+            SÍGUENOS EN:
+            <figure>
+                <a href="https://www.instagram.com/vectorfitnessandnutrition/?hl=es" target="_blank"><img src="./img/Intagram_Icono.png" alt="icono instagram" width="150px"></a>
+                <a href="https://www.facebook.com/VectorFitness" target="_blank"><img src="./img/faceboob_icono.png" alt="icono facebook" width="150px" ></a>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>
